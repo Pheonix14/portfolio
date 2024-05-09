@@ -164,7 +164,7 @@ export default function App() {
         >
           <i class="bi bi-twitter"></i> Twitter
         </a>
-        <a className="btn btn-warning btn-sm" href="soumyajitdas07@outlook.com">
+        <a className="btn btn-warning btn-sm" href="mailto:soumyajitdas07@outlook.com">
           <i class="bi bi-envelope-at-fill"></i> Email
         </a>
         <br />
