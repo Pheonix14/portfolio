@@ -39,30 +39,30 @@ export default function App() {
       <section className="about">
         <h2>About Me:</h2>
         <br />
-        <dl>
-          <dt>Who i am?</dt>
-          <dd>
+        
+          <h5>Who i am?</h5>
+          <p>
             • I'm Soumyajit, a young web developer with a zeal for innovation
             and problem-solving through technology. My coding journey began in
             childhood, leading me to the vibrant realm of web development.
-          </dd>
+          </p>
           <br />
-          <dt>History:</dt>
-          <dd>
+          <h5>History:</h5>
+          <p>
             • I dove into programming via Discord, crafting bots with
             discord.js, which sparked my interest in JavaScript. After
             developing bots like Trollbot and PowerGuardian, I shifted to web
             development, mastering the MERN stack and creating interactive
             websites.
-          </dd>
+          </p>
           <br />
-          <dt>Experience:</dt>
-          <dd>
+          <h5>Experience:</h5>
+          <p>
             • At 16 years old, currently pursuing my 10th-grade education, I may
             not have corporate experience, but I have ventured into application
             development, creating solutions like Phoenix Share.
-          </dd>
-        </dl>
+          </p>
+        
       </section>
       <section className="projects">
         <h2>Projects:</h2>
