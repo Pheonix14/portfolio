@@ -12,12 +12,37 @@ export default function App() {
       <section className="hero">
         <h1>Hey 👋, I'm Soumyajit</h1>
         <h2>
-          aka Pheonix, a full-stack developer and student 👨‍💻 from India 🇮🇳.
+          aka Pheonix, a full-stack developer 👨‍💻 from Kolkata, India 🇮🇳.
           working remotely since 2021 🚀
         </h2>
       </section>
       <section className="skills">
-        <h2>My Skills:</h2>
+        <div class="skills-section">
+    <h2>Technical Skills:</h2>
+          <br/>
+    <div class="skill-category">
+      <h5>Applications:</h5>
+      <ul class="skill-list">
+        <li>• Microsoft Office Suite (Word, Excel, PowerPoint).</li>
+        <li>• Google Workspace for collaborative projects.</li>
+        <li>• Version control using GitHub.</li>
+        <li>• Design and multimedia creation with Canva.</li>
+        <li>• Code editing and debugging in Visual Studio Code.</li>
+        <li>• Online coding and collaboration through Replit.</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h5>Programming Languages & Frameworks:</h5>
+      <ul class="skill-list">
+        <li>• Front-end development: HTML, CSS, JavaScript, TypeScript, Bootstrap.</li>
+        <li>• Back-end development: Node.js, Express.js.</li>
+        <li>• Database management: MongoDB</li>
+        <li>• Web application development with React.</li>
+        <li>• Building efficient development environments with Vite.</li>
+        <li>• Creating bots and automation tools using Discord.js.</li>
+      </ul>
+    </div>
+  </div>
         <br />
         <img
           src="https://skillicons.dev/icons?i=html,css,js,ts,bootstrap&theme=dark&perline=5"

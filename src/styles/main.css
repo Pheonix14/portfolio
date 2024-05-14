@@ -41,6 +41,7 @@ body {
     text-align: center;
     padding: 40px 0;
 }
+
 .skills h2 {
     font-size: 20px;
     font-family: "Ubuntu", sans-serif;
@@ -48,6 +49,36 @@ body {
     font-style: Bold;
     font-weight: 700;
 }
+
+.skills h5 {
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    color: #ff8000;
+    font-style: Medium;
+    font-weight: 500;
+}
+
+  .skill-category {
+    margin-bottom: 15px;
+  }
+
+  .skill-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .skill-list li {
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #00ffff;
+    line-height: 1.6;
+    margin: 1em 1em;
+    font-family: "Ubuntu", sans-serif;
+    font-style: Regular;
+    font-weight: 400;
+  }
 
 .about {
     text-align: center;
@@ -65,14 +96,20 @@ body {
 .about h5 {
     font-size: 20px;
     color: #ff8000;
+    font-family: "Ubuntu", sans-serif;
+    font-style: Medium;
+    font-weight: 500;
 }
+
 .about p {
     font-size: 18px;
     color: #00ffffff;
     line-height: 1.6;
     margin: 1em 1em;
+    font-family: "Ubuntu", sans-serif;
+    font-style: Regular;
+    font-weight: 400;
 }
-
 
 .projects h2 {
     font-size: 20px;
@@ -80,6 +117,12 @@ body {
     color: #00ffff;
     font-style: Bold;
     font-weight: 700;
+}
+
+.projects p {
+    font-family: "Ubuntu", sans-serif;
+    font-style: Regular;
+    font-weight: 400;
 }
 
 .projects {
@@ -123,4 +166,7 @@ body {
 .footer {
     text-align: center;
     padding: 40px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-style: Regular;
+    font-weight: 400;
 }
