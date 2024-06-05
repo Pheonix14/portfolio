@@ -1,6 +1,16 @@
-import "./styles/main.css";
+import "./Styles/Main.css";
+import { useNavigate } from "react-router-dom";
 
 export default function App() {
+  const navigate = useNavigate();
+
+  const ProjectRedirect = () => {
+    navigate("/projects");
+  };
+  const SkillsRedirect = () => {
+    navigate("/skills");
+  };
+
   return (
     <>
       <nav className="nav">
@@ -12,159 +22,43 @@ export default function App() {
       <section className="hero">
         <h1>Hey 👋, I'm Soumyajit</h1>
         <h2>
-          aka Pheonix, a full-stack developer 👨‍💻 from Kolkata, India 🇮🇳.
-          working remotely since 2021 🚀
+          aka Pheonix, a full-stack developer 👨‍💻 from Kolkata, India 🇮🇳. working
+          remotely since 2021 🚀
         </h2>
-      </section>
-      <section className="skills">
-        <div class="skills-section">
-    <h2>Technical Skills:</h2>
-          <br/>
-    <div class="skill-category">
-      <h5>Applications:</h5>
-      <ul class="skill-list">
-        <li>• Microsoft Office Suite (Word, Excel, PowerPoint).</li>
-        <li>• Google Workspace for collaborative projects.</li>
-        <li>• Version control using GitHub.</li>
-        <li>• Design and multimedia creation with Canva.</li>
-        <li>• Code editing and debugging in Visual Studio Code.</li>
-        <li>• Online coding and collaboration through Replit.</li>
-      </ul>
-    </div>
-    <div class="skill-category">
-      <h5>Programming Languages & Frameworks:</h5>
-      <ul class="skill-list">
-        <li>• Front-end development: HTML, CSS, JavaScript, TypeScript, Bootstrap.</li>
-        <li>• Back-end development: Node.js, Express.js.</li>
-        <li>• Database management: MongoDB</li>
-        <li>• Web application development with React.</li>
-        <li>• Building efficient development environments with Vite.</li>
-        <li>• Creating bots and automation tools using Discord.js.</li>
-      </ul>
-    </div>
-  </div>
         <br />
-        <img
-          src="https://skillicons.dev/icons?i=html,css,js,ts,bootstrap&theme=dark&perline=5"
-          alt="My Skills"
-        />
-        <br />
-        <br />
-        <img
-          src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs&theme=dark&perline=5"
-          alt="My Skills"
-        />
-        <br />
-        <br />
-        <img
-          src="https://skillicons.dev/icons?i=vite,discordjs&theme=dark&perline=5"
-          alt="My Skills"
-        />
+        <br /> 
+        <button className="btn btn-danger btn-sm mx-2" onClick={ProjectRedirect}>
+          <i className="bi bi-journals"></i> My Projects
+        </button>
+        <button className="btn btn-success btn-sm" onClick={SkillsRedirect}>
+          <i className="bi bi-tools"></i> My Skills
+        </button>
       </section>
       <section className="about">
         <h2>About Me:</h2>
         <br />
-        
-          <h5>Who i am?</h5>
-          <p>
-            • I'm Soumyajit, a young web developer with a zeal for innovation
-            and problem-solving through technology. My coding journey began in
-            childhood, leading me to the vibrant realm of web development.
-          </p>
-          <br />
-          <h5>History:</h5>
-          <p>
-            • I dove into programming via Discord, crafting bots with
-            discord.js, which sparked my interest in JavaScript. After
-            developing bots like Trollbot and PowerGuardian, I shifted to web
-            development, mastering the MERN stack and creating interactive
-            websites.
-          </p>
-          <br />
-          <h5>Experience:</h5>
-          <p>
-            • At 16 years old, currently pursuing my 10th-grade education, I may
-            not have corporate experience, but I have ventured into application
-            development, creating solutions like Phoenix Share.
-          </p>
-        
-      </section>
-      <section className="projects">
-        <h2>Projects:</h2>
+
+        <h5>Who i am?</h5>
+        <p>
+          • I'm Soumyajit, a young web developer with a zeal for innovation and
+          problem-solving through technology. My coding journey began in
+          childhood, leading me to the vibrant realm of web development.
+        </p>
         <br />
-        <div className="projects-card">
-          <img src="/phoenix-share.png" alt="Logo" className="Logo" />
-          <h2>Phoenix Share</h2>
-          <p>
-            Share your files like never before with Phoenix Share. Phoenix Share
-            is an open source file sharing platform that combines the simplicity
-            of Express.js with the speed and security of a phoenix.
-          </p>
-          <img
-            alt="GitHub Repo stars"
-            className="mx-2"
-            src="https://img.shields.io/github/stars/Pheonix14/Phoenix-Share"
-          />
-          <img
-            alt="GitHub forks"
-            src="https://img.shields.io/github/forks/Pheonix14/Phoenix-Share"
-          />
-          <br />
-          <a
-            className="btn btn-light btn-sm mx-2"
-            href="https://github.com/Pheonix14/Phoenix-Share"
-          >
-            <i class="bi bi-github"></i> GitHub
-          </a>
-        </div>
-        <div className="projects-card">
-          <img src="/ip-lookup.png" alt="Logo" className="Logo" />
-          <h2>IP Lookup</h2>
-          <p>
-            Command-line tool provides detailed information about a specific IP
-            address.
-          </p>
-          <img
-            alt="GitHub Repo stars"
-            className="mx-2"
-            src="https://img.shields.io/github/stars/Pheonix14/IP-Lookup"
-          />
-          <img
-            alt="GitHub forks"
-            src="https://img.shields.io/github/forks/Pheonix14/IP-Lookup"
-          />
-          <br />
-          <a
-            className="btn btn-light btn-sm mx-2"
-            href="https://github.com/Pheonix14/IP-Lookup"
-          >
-            <i class="bi bi-github"></i> GitHub
-          </a>
-        </div>
-        <div className="projects-card">
-          <img src="/pyroquanta.png" alt="Logo" className="Logo" />
-          <h2>PyroQuanta</h2>
-          <p>
-            PyroQuanta is an AI-based open source discord bot powered by
-            Google's Gemini Pro model.
-          </p>
-          <img
-            alt="GitHub Repo stars"
-            className="mx-2"
-            src="https://img.shields.io/github/stars/Pheonix14/PyroQuanta"
-          />
-          <img
-            alt="GitHub forks"
-            src="https://img.shields.io/github/forks/Pheonix14/PyroQuanta"
-          />
-          <br />
-          <a
-            className="btn btn-light btn-sm mx-2"
-            href="https://github.com/Pheonix14/PyroQuanta"
-          >
-            <i class="bi bi-github"></i> GitHub
-          </a>
-        </div>
+        <h5>History:</h5>
+        <p>
+          • I dove into programming via Discord, crafting bots with discord.js,
+          which sparked my interest in JavaScript. After developing bots like
+          Trollbot and PowerGuardian, I shifted to web development, mastering
+          the MERN stack and creating interactive websites.
+        </p>
+        <br />
+        <h5>Experience:</h5>
+        <p>
+          • At 16 years old, currently pursuing my 10th-grade education, I may
+          not have corporate experience, but I have ventured into application
+          development, creating solutions like Phoenix Share.
+        </p>
       </section>
       <section className="social">
         <h2>Let's Connect:</h2>
@@ -173,13 +67,13 @@ export default function App() {
           className="btn btn-light btn-sm mx-2"
           href="https://github.com/Pheonix14"
         >
-          <i class="bi bi-github"></i> GitHub
+          <i className="bi bi-github"></i> GitHub
         </a>
         <a
           className="btn btn-info btn-sm"
           href="https://discord.com/users/674145228063768587"
         >
-          <i class="bi bi-discord"></i> Discord
+          <i className="bi bi-discord"></i> Discord
         </a>
         <br />
         <br />
@@ -187,10 +81,13 @@ export default function App() {
           className="btn btn-primary btn-sm mx-2"
           href="https://x.com/Pheonix1416?s=09"
         >
-          <i class="bi bi-twitter"></i> Twitter
+          <i className="bi bi-twitter"></i> Twitter
         </a>
-        <a className="btn btn-warning btn-sm" href="mailto:soumyajitdas07@outlook.com">
-          <i class="bi bi-envelope-at-fill"></i> Email
+        <a
+          className="btn btn-warning btn-sm"
+          href="mailto:soumyajitdas07@outlook.com"
+        >
+          <i className="bi bi-envelope-at-fill"></i> Email
         </a>
         <br />
         <br />
@@ -198,12 +95,9 @@ export default function App() {
           className="btn btn-danger btn-sm"
           href="https://www.instagram.com/_impheonix_?igsh=ajdqcTIwb3Zrd2w3"
         >
-          <i class="bi bi-instagram"></i> Instagram
+          <i className="bi bi-instagram"></i> Instagram
         </a>
       </section>
-      <footer className="footer">
-        <p>© 2024 Pheonix. All rights reserved.</p>
-      </footer>
     </>
   );
 }
