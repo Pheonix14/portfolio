@@ -26,13 +26,24 @@ export default function App() {
           remotely since 2021 🚀
         </h2>
         <br />
-        <br /> 
-        <button className="btn btn-danger btn-sm mx-2" onClick={ProjectRedirect}>
-          <i className="bi bi-journals"></i> My Projects
+        <br />
+        <button
+          className="btn btn-danger btn-sm mx-2"
+          onClick={ProjectRedirect}
+        >
+          <i className="bi bi-journals"></i> Projects
         </button>
         <button className="btn btn-success btn-sm" onClick={SkillsRedirect}>
-          <i className="bi bi-tools"></i> My Skills
+          <i className="bi bi-tools"></i> Skills
         </button>
+        <br />
+        <br />
+        <a
+          className="btn btn-light btn-sm"
+          href="https://pheonix14.blogspot.com"
+        >
+          <i className="bi bi-newspaper"></i> Blogspot
+        </a>
       </section>
       <section className="about">
         <h2>About Me:</h2>
